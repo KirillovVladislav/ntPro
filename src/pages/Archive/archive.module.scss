@@ -1,0 +1,18 @@
+.container {
+    display: grid;
+    font-size: 14px;
+
+
+    .row {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 6% 16% 16% 25% auto;
+        grid-template-rows: 28px;
+    }
+
+    .item {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
