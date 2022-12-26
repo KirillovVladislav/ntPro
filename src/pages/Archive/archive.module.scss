@@ -1,18 +1,30 @@
 .container {
     display: grid;
-    font-size: 14px;
-
+    font-size: 12px;
+    color:#777777;
 
     .row {
+
         display: grid;
         width: 100%;
-        grid-template-columns: 6% 16% 16% 25% auto;
+        grid-template-columns: 8% 16% 16% 25% auto;
         grid-template-rows: 28px;
+
     }
 
     .item {
         display: grid;
         justify-content: center;
         align-items: center;
+
+        &[color='buy'] {
+            color: red;
+        }
+
+        &[color='sell'] {
+            color: yellowgreen;
+        }
     }
+
+    
 }

@@ -7,7 +7,7 @@ import { Select } from '../../components/UI/Select/Select';
 const exchange = [
   { currency: 'usd/rub', price: 62.843 },
   { currency: 'usd/eur', price: 0.941 },
-  { currency: 'usd/bitcoin', price: 0.000059 },
+  { currency: 'usd/cad', price: 1.542 },
 ];
 
 export const Trading = () => {

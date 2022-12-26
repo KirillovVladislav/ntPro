@@ -9,14 +9,21 @@ type ModalContentProps = {
   setVisible: (visible: boolean) => void;
   price: number;
   instrument: string;
+  side: string;
 };
 
-export const ModalContent = ({ setVisible, price, instrument }: ModalContentProps) => {
+export const ModalContent = ({
+  setVisible,
+  price,
+  instrument,
+  side,
+}: ModalContentProps) => {
   const [volume, setVolume] = useState('');
   const dispatch = useDispatch();
 
   const onClickAdd = () => {
     const item: TArchiveItem = {
+      side,
       volume,
       instrument,
       price,
@@ -35,7 +42,10 @@ export const ModalContent = ({ setVisible, price, instrument }: ModalContentProp
         </span>
       </div>
       <div className={styles.info}>
-        <span>sell</span>
+        <span color={side} className={styles.side}>
+          {side}
+        </span>
+        <span>{price}</span>
         <span>{instrument}</span>
       </div>
       <div className={styles.volume}>

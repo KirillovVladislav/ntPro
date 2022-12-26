@@ -1,4 +1,5 @@
 export type TArchiveItem = {
+  side: string;
   time: string;
   price: number;
   instrument: string;

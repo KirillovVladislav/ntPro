@@ -7,11 +7,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    color:#232323;
     border-bottom: 1px solid rgb(54, 66, 85) ;
 }}
 
+.side{
+    &[color='buy'] {
+        color: red;
+    }
 
+    &[color='sell'] {
+        color: yellowgreen;
+    }
+}
 
 .close { 
     cursor: pointer;
@@ -19,13 +27,14 @@
 }
 
 .info {
+    width: 100%;
     font-size: 20px;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 10px;
-    gap: 21px;
+    padding: 15px 0;
+    gap: 35px;
 }
 
 .volume { 
@@ -33,6 +42,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 10px;
+    gap:3px;
 }
 
 .btn { 

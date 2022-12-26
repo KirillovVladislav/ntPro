@@ -18,7 +18,9 @@ export const Archive = () => {
       <hr />
       {state.items.map((el) => (
         <div className={styles.row} key={el.time}>
-          <span className={styles.item}>Sell</span>
+          <span color={el.side} className={styles.item}>
+            {el.side}
+          </span>
           <span className={styles.item}>{el.price}</span>
           <span className={styles.item}>{el.instrument}</span>
           <span className={styles.item}>{el.volume}</span>
